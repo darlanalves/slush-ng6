@@ -1,0 +1,1 @@
+require('ng6-browserify/dev-server');

@@ -2,7 +2,7 @@ import { di } from 'angular-di';
 
 class IndexController {
     constructor(UserService) {
-
+        //
     }
 }
 
