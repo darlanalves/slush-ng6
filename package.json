@@ -1,0 +1,31 @@
+{
+  "name": "slush-ng6",
+  "description": "Yet another SPA generator with AngularJS and ES6",
+  "version": "1.0.0",
+  "author": "Darlan Alves <me@darlanalv.es>",
+  "main": "slushfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/darlanalves/slush-ng6.git"
+  },
+  "keywords": [
+    "slushgenerator",
+    "gulp"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darlanalves/slush-ng6/issues"
+  },
+  "homepage": "https://github.com/darlanalves/slush-ng6",
+  "dependencies": {
+    "gulp-rename": "1.2.0",
+    "multipipe": "0.1.1",
+    "gulp-install": "0.1.5",
+    "gulp-conflict": "0.1.2",
+    "gulp": "3.8.1",
+    "async": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

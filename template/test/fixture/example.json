@@ -1,0 +1,5 @@
+{
+    "a": "This is an example of a fixture: a JSON file with a predefined",
+    "b": "set of data, used on testing to simulate responses from a 3rd",
+    "c": "party API or a backend server"
+}
