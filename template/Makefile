@@ -4,6 +4,9 @@ test:
 tdd:
 	./node_modules/karma/bin/karma start karma.conf.js
 
+coverage:
+	./node_modules/karma/bin/karma start karma.coverage.conf.js --single-run
+
 watch:
 	./node_modules/.bin/gulp watch
 
@@ -27,4 +30,4 @@ docs:
 	rm -rf docs;\
 	./node_modules/.bin/esdoc -c esdoc.json;
 
-.PHONY: test tdd build bundle serve coverage watch setup docs
+.PHONY: test tdd build bundle serve coverage watch setup docs coverage

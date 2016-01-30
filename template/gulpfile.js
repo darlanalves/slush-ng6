@@ -30,6 +30,7 @@ var config = {
         outputName: 'app.css',
         include: [
             // sass include paths
+            process.cwd() + '/sass'
         ]
     }
 };

@@ -1,1 +1,1 @@
-require('ng6-browserify/dev-server');
+require('ng6-browserify/dev-server')();

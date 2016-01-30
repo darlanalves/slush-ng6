@@ -1,0 +1,1 @@
+module.exports = require('ng6-browserify/karma.coverage.conf');
