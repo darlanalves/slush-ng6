@@ -5,4 +5,4 @@ fixtures.setPath('/test/fixture');
 // browserify won't pick up the loader via karma config
 beforeAll(done => fixtures.load(done));
 
-export { fixtures };
+export default fixtures;

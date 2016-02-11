@@ -10,29 +10,16 @@ gulp.task('default', function(exit) {
         multipipe = require('multipipe'),
         async = require('async');
 
-    async.series([
-        function(callback) {
-            console.log('Copying files');
-            copyTemplateFiles(callback);
-        },
 
-        function(callback) {
-            console.log('Installing modules');
-            runNpm(callback);
-        }
-    ], function(error) {
-        if (error) {
-            console.log('[error] ' + error);
-        }
+    copyTemplateFiles();
 
-        exit();
-    });
+    function copyTemplateFiles() {
+        console.log('Copying files');
 
-    function copyTemplateFiles(callback) {
         multipipe(
             gulp.src(__dirname + '/template/**'),
             rename(function(file) {
-                if (file.basename[0] === '_') {
+                if (file.basename[0] === '_' && file.extname !== '.sass') {
                     file.basename = '.' + file.basename.slice(1);
                 }
             }),
@@ -42,32 +29,13 @@ gulp.task('default', function(exit) {
         );
 
         function onEnd(error) {
-
             if (error) {
-                console.log('>> Generator failed!!');
-                console.log(error);
-                callback(error, null);
-                return;
+                console.log('[error]', error);
+            } else {
+                console.log('Generation completed. Don`t forget to install the npm packages');
             }
 
-            callback(null, true);
+            exit();
         }
-    }
-
-    function runNpm(callback) {
-        var pipe = multipipe(gulp.src('./package.json'), install());
-
-        pipe.on('end', function() {
-            console.log('Modules installed');
-            callback(null, true);
-        });
-
-        pipe.on('data', function(data) {
-            return data;
-        });
-
-        pipe.on('error', function(err) {
-            callback(err, null);
-        });
     }
 });

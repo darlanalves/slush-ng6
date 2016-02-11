@@ -5,21 +5,22 @@ import router from 'angular-ui-router';
 import { routes } from './routes';
 
 import user from 'user/module';
-import index from './index/module';
+import components from 'component/module';
 
+// regular module names can be included here as well
 const dependencies = [
     router,
     user,
-    index
+    components
 ];
 
 /**
  * @private
  */
-const app = di.module(dependencies);
+const Application = di.module(dependencies);
+const runApp = () => Application.run(document.body);
 
-app.routes(routes);
+Application.routes(routes);
+window.angular.element(document).ready(runApp);
 
-angular.element(document).ready(() => app.run(document.body) );
-
-export default app;
+export default Application;
