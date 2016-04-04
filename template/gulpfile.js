@@ -6,6 +6,7 @@ var config = {
         outputPath: 'public/js',
         entry: './src/app/app.js',
         ignore: ['angular'],
+        include: ['src'],
         // NOTE: add builtins here when necessary
         builtins: []
     },
