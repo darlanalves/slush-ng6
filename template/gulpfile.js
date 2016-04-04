@@ -32,6 +32,13 @@ var config = {
             // sass include paths
             process.cwd() + '/sass'
         ]
+    },
+
+    // file paths replaced on content of 'index.html' while
+    // compressing the project
+    bundleReplacedFiles: {
+        'angular.js': 'angular.min.js',
+        'app.js': 'app.min.js'
     }
 };
 
