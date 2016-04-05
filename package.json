@@ -1,7 +1,7 @@
 {
   "name": "slush-ng6",
   "description": "Yet another SPA generator with AngularJS and ES6",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Darlan Alves <me@darlanalv.es>",
   "main": "slushfile.js",
   "repository": {
