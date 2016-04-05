@@ -4,7 +4,7 @@ var config = {
     app: {
         outputName: 'app.js',
         outputPath: 'public/js',
-        entry: './src/app/app.js',
+        entry: './app.js',
         ignore: ['angular'],
         include: ['src'],
         // NOTE: add builtins here when necessary
@@ -21,7 +21,7 @@ var config = {
     },
 
     assets: {
-        src: ['src/assets/**/*'],
+        src: ['static/**/*'],
         outputPath: 'public'
     },
 
