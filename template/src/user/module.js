@@ -1,6 +1,6 @@
 import { di } from 'angular-di';
 
-import { UserService } from './user.service';
+import UserService from './user.service';
 
 /**
  * User module

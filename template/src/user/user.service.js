@@ -16,4 +16,4 @@ class UserService {
 
 di.inject(UserService, '');
 
-export { UserService };
+export default UserService;

@@ -20,4 +20,4 @@ class Index {
 
 di.inject(Index, 'UserService');
 
-export { Index };
+export default Index;

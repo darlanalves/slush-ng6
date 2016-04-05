@@ -2,7 +2,7 @@ import { di } from 'angular-di';
 import ng from 'angular';
 import router from 'angular-ui-router';
 
-import { routes } from './routes';
+import routes from './routes';
 
 import user from 'user/module';
 import components from 'component/module';
@@ -21,6 +21,6 @@ const Application = di.module(dependencies);
 const runApp = () => Application.run(document.body);
 
 Application.routes(routes);
-window.angular.element(document).ready(runApp);
+angular.element(document).ready(runApp);
 
 export default Application;

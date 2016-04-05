@@ -1,4 +1,4 @@
-import { UserService } from './user.service.js';
+import UserService from './user.service.js';
 import fixtures from 'fixtures.js';
 
 describe('UserService', function() {

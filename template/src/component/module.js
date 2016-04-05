@@ -1,6 +1,6 @@
 import { di } from 'angular-di';
 
-import { Index } from './index/index.js';
+import Index from './index/index.js';
 
 /**
  * Module with all app components
