@@ -2,7 +2,7 @@ import { di } from 'angular-di';
 import ng from 'angular';
 import router from 'angular-ui-router';
 
-import routes from './routes';
+import routes from 'routes';
 
 import user from 'user/module';
 import components from 'component/module';
