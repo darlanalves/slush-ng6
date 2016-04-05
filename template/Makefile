@@ -17,7 +17,7 @@ bundle: build
 	./node_modules/.bin/gulp compress
 
 serve:
-	./node_modules/.bin/gulp serve
+	node server.js
 
 lint:
 	./node_modules/.bin/gulp jshint
